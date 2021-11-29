@@ -32,12 +32,7 @@
   "scripts": {
     "tag": "scripts/tag",
     "prepublishOnly": "npm run tag",
-    "postinstall": "cross-os darwin-extract"
-  },
-  "cross-os": {
-    "darwin-extract": {
-      "darwin": "tar -zxf apple/WebRTC.xcframework.tgz -C apple"
-    }
+    "postinstall": "tar -zxf apple/WebRTC.xcframework.tgz -C apple"
   },
   "bugs": {
     "url": "https://github.com/daily-co/react-native-webrtc/issues"
